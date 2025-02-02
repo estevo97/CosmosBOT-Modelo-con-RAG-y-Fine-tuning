@@ -22,7 +22,7 @@ download_file(url_document_json, "document_texts1.json")
 # Configurar tu API Key
 from openai import OpenAI
 load_dotenv()
-apikey = os.getenv("clave")
+apikey = st.secrets.get("clave")
 
 
 # Cargar el índice FAISS y documentos
@@ -64,7 +64,7 @@ def retrieve_context(query_text, k=5):
 
 
 
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key=apikey)
 def generate_response(prompt):
     response = client.chat.completions.create(
         model="ft:gpt-3.5-turbo-0125:personal::AwCV0n9Y",  # Ajusta con el nombre de tu modelo fine-tuned
