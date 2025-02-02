@@ -64,7 +64,11 @@ def retrieve_context(query_text, k=5):
 
 
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=apikey)
+if openai.api_key:
+    st.write("Clave API configurada correctamente.")
+else:
+    st.write("No se pudo configurar la clave API.")
 def generate_response(prompt):
     response = client.chat.completions.create(
         model="ft:gpt-3.5-turbo-0125:personal::AwCV0n9Y",  # Ajusta con el nombre de tu modelo fine-tuned
