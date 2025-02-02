@@ -4,6 +4,20 @@ import faiss
 import numpy as np
 from dotenv import load_dotenv
 import os
+import requests
+
+def download_file(url, local_filename):
+    response = requests.get(url)
+    if response.status_code == 200:
+        with open(local_filename, "wb") as file:
+            file.write(response.content)
+            print(f"Archivo '{local_filename}' descargado con éxito.")
+    else:
+        print(f"Error al descargar el archivo: {response.status_code}")
+
+# Usa la URL generada con SAS
+url_document_json = "https://upgradeestevom6907963292.blob.core.windows.net/proyecto-chatbotqf/Quantum/embeddings/document_embeddings.npy?sp=r&st=2025-02-02T18:38:37Z&se=2025-02-03T02:38:37Z&spr=https&sv=2022-11-02&sr=b&sig=nCNQpai5ic%2FP8eYwloshNRC170CDMO%2BmLP778FaU%2B70%3D"
+download_file(url_document_json, "document_texts.json")
 
 # Configurar tu API Key
 load_dotenv()
