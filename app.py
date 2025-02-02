@@ -64,7 +64,7 @@ def retrieve_context(query_text, k=5):
 from openai import OpenAI
 load_dotenv()
 apikey = st.secrets.get("Clave")
-client = OpenAI(api_key=apikey)
+client = OpenAI(api_key=openai.api_key)
 def generate_response(prompt):
     response = client.chat.completions.create(
         model="ft:gpt-3.5-turbo-0125:personal::AwCV0n9Y",  # Ajusta con el nombre de tu modelo fine-tuned
