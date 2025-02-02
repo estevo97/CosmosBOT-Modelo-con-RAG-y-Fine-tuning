@@ -1,14 +1,5 @@
 streamlit
-streamlit-option-menu
-numpy
-plotly-express
-plotly
-folium
-streamlit-folium
 python-dotenv
-streamlit-option-menu
 openai
-openai
-streamlit
 faiss-cpu 
 numpy 
