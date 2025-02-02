@@ -35,7 +35,7 @@ with open("document_texts1.json", "r") as f:
 
 
 
-
+openai.api_key = apikey
 def get_embedding(text):
     # Este es el método correcto para la versión >= 1.0.0
     response = openai.embeddings.create(
