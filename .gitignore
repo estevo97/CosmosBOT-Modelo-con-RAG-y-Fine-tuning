@@ -15,6 +15,7 @@ mp3s/*.mp3
 transcripts/*.txt
 *.jsonl
 *.txt
+embeddings/*.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
