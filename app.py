@@ -20,9 +20,10 @@ url_document_json = "https://upgradeestevom6907963292.blob.core.windows.net/proy
 download_file(url_document_json, "document_texts1.json")
 
 # Configurar tu API Key
+from openai import OpenAI
 load_dotenv()
 apikey = os.getenv("clave")
-openai.api_key = apikey
+
 
 # Cargar el índice FAISS y documentos
 import faiss
@@ -34,7 +35,7 @@ with open("document_texts1.json", "r") as f:
 
 
 
-openai.api_key = apikey
+
 def get_embedding(text):
     # Este es el método correcto para la versión >= 1.0.0
     response = openai.embeddings.create(
@@ -61,10 +62,9 @@ def retrieve_context(query_text, k=5):
     return " ".join(relevant_texts)
 
 
-from openai import OpenAI
-load_dotenv()
-apikey = st.secrets.get("Clave")
-client = OpenAI(api_key=openai.api_key)
+
+
+client = OpenAI(api_key=api_key)
 def generate_response(prompt):
     response = client.chat.completions.create(
         model="ft:gpt-3.5-turbo-0125:personal::AwCV0n9Y",  # Ajusta con el nombre de tu modelo fine-tuned
