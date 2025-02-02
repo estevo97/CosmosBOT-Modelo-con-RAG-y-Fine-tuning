@@ -8,3 +8,7 @@ streamlit-folium
 python-dotenv
 streamlit-option-menu
 openai
+openai
+streamlit
+faiss-cpu 
+numpy 
