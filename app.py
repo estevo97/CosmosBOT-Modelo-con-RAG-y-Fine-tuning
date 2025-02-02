@@ -63,7 +63,7 @@ def retrieve_context(query_text, k=5):
 
 from openai import OpenAI
 load_dotenv()
-apikey = st.secrets.get("clave")
+apikey = st.secrets.get("Clave")
 client = OpenAI(api_key=apikey)
 def generate_response(prompt):
     response = client.chat.completions.create(
