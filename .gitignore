@@ -14,7 +14,7 @@ mp4s/*.mp4
 mp3s/*.mp3
 transcripts/*.txt
 *.jsonl
-*.txt
+preguntas_respuestas.txt
 embeddings/*.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
