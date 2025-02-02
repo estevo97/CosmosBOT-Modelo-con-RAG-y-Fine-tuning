@@ -1,4 +1,4 @@
-streamlit
+streamli
 python-dotenv
 openai
 faiss-cpu 
