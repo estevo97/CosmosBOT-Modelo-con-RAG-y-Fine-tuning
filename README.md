@@ -1,4 +1,6 @@
-# CosmosBot: El ChatBot con la personalidad de un divulgador de ciencia
+# CosmosBot 
+
+### El ChatBot con la personalidad de un divulgador de ciencia
 
 Este proyecto combina la técnica del fine-tuning de modelos de lenguaje y la Retrieval-augmented-generation (RAG) para responder preguntas interesantes sobre ciencia y filosofía. 
 
