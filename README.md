@@ -1,4 +1,4 @@
-# CosmosBot: 
+# CosmosBot 
 
 ### El ChatBot con la personalidad de un divulgador de ciencia
 
