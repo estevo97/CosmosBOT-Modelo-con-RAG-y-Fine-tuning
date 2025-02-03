@@ -29,7 +29,7 @@ apikey = st.secrets.get("clave")
 import faiss
 import json
 index = faiss.read_index("faiss_index.index")
-with open("document_texts.json", "r") as f:
+with open(url_document_json, "r") as f:
     documentos = json.load(f)
 
 
