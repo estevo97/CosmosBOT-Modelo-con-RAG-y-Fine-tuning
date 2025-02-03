@@ -13,6 +13,8 @@ Este proyecto combina la técnica del fine-tuning de modelos de lenguaje y la Re
     - Búsqueda de los k elementos más cercanos (a la consulta) con FAISS para combinarlos con el prompt y obtener mejores respuestas
 - App de Streamlit para probar el ChatBot
 
-## Instalación
+## Aplicación de Streamlit
+Usar el chat en el siguiente link: https://cosmosbot-modelo-con-rag-y-fine-tuning-iurmqrelaawektdbwcktka.streamlit.app/
 
 ## Cómo usarlo
+
