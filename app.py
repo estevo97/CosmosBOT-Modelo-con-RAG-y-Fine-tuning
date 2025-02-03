@@ -90,12 +90,14 @@ def generate_response(prompt):
 # Interfaz de usuario con Streamlit
 st.title("CosmosBOT")
 st.markdown(
-        """
-        <div style="background-color: white; padding: 10px; border-radius: 5px;">
-            <h1>Limpieza de Datos</h1>
-            <h2 style="text-indent: 1em;">Asistente de ciencia personalizado</h2>
-        </div>
-        """)
+    """
+    <div style="background-color: white; padding: 10px; border-radius: 5px;">
+        <h1>Limpieza de Datos</h1>
+        <h2 style="text-indent: 1em;">Asistente de ciencia personalizado</h2>
+    </div>
+    """, 
+    unsafe_allow_html=True
+)
 st.write("Haz preguntas relacionadas con ciencia o reflexiones profundas.")
 
 # Entrada del usuario
