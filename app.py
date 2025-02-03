@@ -22,7 +22,7 @@ download_file(url_document_json, "document_texts1.json")
 # Configurar tu API Key
 from openai import OpenAI
 load_dotenv()
-apikey = os.getenv("clave")
+apikey = st.secret.get("clave")
 
 
 # Cargar el índice FAISS y documentos
