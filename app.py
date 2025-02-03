@@ -91,9 +91,26 @@ def generate_response(prompt):
 
 st.markdown(
     """
-    <div style="background-color: white; padding: 10px; border-radius: 5px;">
-        <h1>CosmosBOT</h1>
-        <h2 style="text-indent: 1em;">El asistente de ciencia personalizado</h2>
+    <div style="
+        background-color: #f0f8ff; 
+        padding: 15px; 
+        border-radius: 10px; 
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="
+            color: #4b0082; 
+            font-size: 3em; 
+            font-family: 'Arial Black', sans-serif; 
+            letter-spacing: 2px;">
+            🌌 CosmosBOT 🌟
+        </h1>
+        <h2 style="
+            color: #2f4f4f; 
+            font-size: 1.5em;
+            font-style: italic;
+            text-indent: 1em;">
+            Tu asistente de ciencia personalizado 🚀
+        </h2>
     </div>
     """, 
     unsafe_allow_html=True
