@@ -19,6 +19,7 @@ embeddings/*.json
 1_extraer.ipynb
 2_ntb_transformar.ipynb
 3_cargar.ipynb
+4_rag_creando_embeddings.ipynb
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
