@@ -17,7 +17,7 @@ def download_file(url, local_filename):
 
 # Usa la URL generada con SAS
 url_document_json = "https://upgradeestevom6907963292.blob.core.windows.net/proyecto-chatbotqf/Quantum/embeddings/document_texts.json?sp=r&st=2025-02-03T15:51:42Z&se=2025-02-03T23:51:42Z&spr=https&sv=2022-11-02&sr=b&sig=1ngYaCMMxIfCAgxEC1IudoxBIrNk0V0xYSxAoa0LB4c%3D"
-download_file(url_document_json, "document_texts.json")
+download_file(url_document_json, "embeddings/document_texts.json")
 
 # Configurar tu API Key
 from openai import OpenAI
@@ -29,7 +29,7 @@ apikey = st.secrets.get("clave")
 import faiss
 import json
 index = faiss.read_index("faiss_index.index")
-with open(url_document_json, "r") as f:
+with open("embeddings/document_texts.json", "r") as f:
     documentos = json.load(f)
 
 
