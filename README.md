@@ -31,4 +31,4 @@ Usar el chat en el siguiente link: https://cosmosbot-modelo-con-rag-y-fine-tunin
 - 🌌 **Las galaxias, la Vía Láctea y Andrómeda**  
 - 🌈 **La atmósfera y su efecto en las ondas de luz**  
 - 🧭 **La estrella polar, brújulas y los polos magnéticos**  
-
+- 🌍 **Las capas de la Tierra**
