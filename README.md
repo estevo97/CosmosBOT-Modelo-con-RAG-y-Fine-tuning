@@ -16,5 +16,19 @@ Este proyecto combina la técnica del fine-tuning de modelos de lenguaje y la Re
 ## Aplicación de Streamlit
 Usar el chat en el siguiente link: https://cosmosbot-modelo-con-rag-y-fine-tuning-iurmqrelaawektdbwcktka.streamlit.app/
 
-## Cómo usarlo
+## Cómo usarlo | Consejos
+- **Hacer una pregunta o plantear un tema científico.**
+- **Preferible un tono informal (opcional).**
+- **Repetir la pregunta con otras palabras en caso de respuesta corta o genérica.**  
+- **Dar feedback:**  
+  Por ejemplo, si en una respuesta sobre estrellas te responde:  
+  💬 *"En las estrellas tienen lugar reacciones nucleares."*  
+  Puedes preguntar:  
+  💬 *"¿Y qué reacciones nucleares pueden tener lugar en las estrellas?"*
+
+### Temáticas del embedding:  
+- ⭐ **Las estrellas y sus ciclos**  
+- 🌌 **Las galaxias, la Vía Láctea y Andrómeda**  
+- 🌈 **La atmósfera y su efecto en las ondas de luz**  
+- 🧭 **La estrella polar, brújulas y los polos magnéticos**  
 

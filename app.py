@@ -22,7 +22,7 @@ download_file(url_document_json, "document_texts1.json")
 # Configurar tu API Key
 from openai import OpenAI
 load_dotenv()
-apikey = os.getenv("clave")
+apikey = st.secrets.get("clave")
 
 
 # Cargar el índice FAISS y documentos
@@ -67,7 +67,7 @@ def retrieve_context(query_text, k=5):
 client = OpenAI(api_key=apikey)
 if apikey:
     openai.api_key = apikey  # Asignamos la clave para usarla con la API
-    st.write("Clave API configurada correctamente.")
+    st.write("")
 else:
     st.write("No se pudo configurar la clave API.")
 def generate_response(prompt):
