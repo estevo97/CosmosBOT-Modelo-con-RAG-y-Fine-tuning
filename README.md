@@ -1,4 +1,4 @@
-# CosmosBot | Asistente de ciencia personalizado
+# CosmosBot
 
 ### El ChatBot con la personalidad de un divulgador de ciencia
 
