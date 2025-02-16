@@ -17,6 +17,7 @@ def download_file(url, local_filename):
 
 # Usa la URL generada con SAS
 url_document_json = "https://upgradeestevom6907963292.blob.core.windows.net/proyecto-chatbotqf/Quantum/embeddings/document_texts.json?sp=r&st=2025-02-16T11:19:00Z&se=2025-03-24T19:19:00Z&spr=https&sv=2022-11-02&sr=b&sig=RysSfbzNhx%2Brvf0HTYM9baINPOZSn9VJZC4VbDgHP2M%3D"
+print("URL en uso:", url_document_json)
 download_file(url_document_json, "embeddings/document_texts.json")
 
 # Configurar tu API Key
