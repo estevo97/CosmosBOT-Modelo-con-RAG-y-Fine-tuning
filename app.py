@@ -16,7 +16,7 @@ def download_file(url, local_filename):
         print(f"Error al descargar el archivo: {response.status_code}")
 
 # Usa la URL generada con SAS
-url_document_json = "https://upgradeestevom6907963292.blob.core.windows.net/proyecto-chatbotqf/Quantum/embeddings/document_texts.json?sp=r&st=2025-02-16T11:15:09Z&se=2025-03-23T19:15:09Z&spr=https&sv=2022-11-02&sr=b&sig=AgPpM%2FdXsRjm3vc7efwH9E%2FgZ8P8pn48%2BtNo5XkjB5o%3D"
+url_document_json = "https://upgradeestevom6907963292.blob.core.windows.net/proyecto-chatbotqf/Quantum/embeddings/document_texts.json?sp=r&st=2025-02-16T11:19:00Z&se=2025-03-24T19:19:00Z&spr=https&sv=2022-11-02&sr=b&sig=RysSfbzNhx%2Brvf0HTYM9baINPOZSn9VJZC4VbDgHP2M%3D"
 download_file(url_document_json, "embeddings/document_texts.json")
 
 # Configurar tu API Key
