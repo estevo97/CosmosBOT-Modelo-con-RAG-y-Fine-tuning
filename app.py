@@ -79,7 +79,7 @@ def generate_response(prompt):
             {"role": "user", "content": prompt}
         ],
         temperature=0.9,  # Ajusta la creatividad de la respuesta (0.0 - 1.0)
-        max_tokens=1950,   # Número máximo de tokens en la respuesta
+        max_tokens=1150,   # Número máximo de tokens en la respuesta
         top_p=1,          # Control de muestreo por núcleo (0.0 - 1.0)
         frequency_penalty=0,  # Penaliza repeticiones
         presence_penalty=0
