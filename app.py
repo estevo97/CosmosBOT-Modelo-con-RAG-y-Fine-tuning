@@ -75,11 +75,11 @@ def generate_response(prompt):
     response = client.chat.completions.create(
         model="ft:gpt-3.5-turbo-0125:personal::AwCV0n9Y",  # Ajusta con el nombre de tu modelo fine-tuned
         messages=[
-            {"role": "system", "content": "Eres una persona que está teniendo nua conversación distendida con un divulgador de ciencia"},
+            {"role": "system", "content": "Eres una persona que está teniendo una conversación distendida con un divulgador de ciencia"},
             {"role": "user", "content": prompt}
         ],
         temperature=0.9,  # Ajusta la creatividad de la respuesta (0.0 - 1.0)
-        max_tokens=1150,   # Número máximo de tokens en la respuesta
+        max_tokens=100,   # Número máximo de tokens en la respuesta
         top_p=1,          # Control de muestreo por núcleo (0.0 - 1.0)
         frequency_penalty=0,  # Penaliza repeticiones
         presence_penalty=0
