@@ -80,7 +80,7 @@ def generate_response(prompt):
         ],
         temperature=0.9,  # Ajusta la creatividad de la respuesta (0.0 - 1.0)
         max_tokens=600,   # Número máximo de tokens en la respuesta
-        top_p=1,          # Control de muestreo por núcleo (0.0 - 1.0)
+        top_p=0.5,          # Control de muestreo por núcleo (0.0 - 1.0)
         frequency_penalty=0,  # Penaliza repeticiones
         presence_penalty=0
     )
